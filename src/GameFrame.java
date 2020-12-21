@@ -4,4 +4,8 @@ import java.util.*;
 import javax.swing.*;
 
 public class GameFrame {
+
+    GameFrame(){
+
+    }
 }
