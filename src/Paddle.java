@@ -29,7 +29,7 @@ public class Paddle extends Rectangle {
 
     }
 
-    public void Draw(Graphics g){
+    public void draw(Graphics g){
         if(id == 1)
             g.setColor(Color.blue);
         else
