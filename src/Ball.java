@@ -11,8 +11,18 @@ public class Ball extends Rectangle {
     int xVelocity;
     int yVelocity;
 
-    Ball(){
+    Ball(int x, int y, int width, int height){
+        super(x,y,width,height);
+        random = new Random();
+        int randomXDirection = random.nextInt(2);
+        if(randomXDirection == 0)
+            randomXDirection--;
+        setXDirection(randomXDirection);
 
+        int randomYDirection = random.nextInt(2);
+        if(randomYDirection == 1)
+            randomYDirection++;
+        setYDirection(randomYDirection);
     }
 
     public void setXDirection(int randomXDirection){
